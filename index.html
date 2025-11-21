@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="Sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIK339 - Labb1</title>
+</head>
+<body>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- UPPGIFT 1 - Reflektion -->
+
+<!--Ofta finner vi <script> taggen i header eller i body. I HTML koden
+ovan är <script> lagd i body. I Script-taggen kan hela JavaScript koden
+bäddas in, men idag är det vanligare att koppla en separat JavaScript
+fil till HTML filen. Detta görs med attributet "src". Placeringen av
+script-taggen har betydelse eftersom om den är placerad längst
+ned i body, finns all HTML tillgänglig när JavaScripten körs.
+Denna placering undviker blockering. Om script-taggen är placerad i
+<head> utan "defer" eller "async", kommer <script> taggen att köras
+direkt, vilket kan orsaka blockering eftersom skriptet laddas och körs
+innan HTML-koden.
+
+Defer är ett attribut som används i samband med sammankopplingen av
+HTML fil och JavaScript, alltså med <script src = "..."> och den
+används bara om script skrivs inom "head", men inte i "body".
+Detta attribut tillgodose ett vikigt behov, att HTML koden körs innan
+script koden.-->
